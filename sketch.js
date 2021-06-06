@@ -25,7 +25,7 @@ function setup(){
     createCanvas(400,700);
     umbrella = new Umbrella(200,500);
 
-    //creating drops
+    //crear gotas
     if(frameCount % 150 === 0){
 
         for(var i=0; i<maxDrops; i++){
@@ -40,7 +40,7 @@ function draw(){
     Engine.update(engine);
     background(0); 
 
-    //creating thunder
+    //crear truenos
     rand = Math.round(random(1,4));
     if(frameCount%80===0){
         thunderCreatedFrame=frameCount;
